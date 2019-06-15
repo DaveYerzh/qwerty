@@ -1,0 +1,92 @@
+\documentclass[12pt]{article} % размер шрифта
+
+\usepackage{tikz} % картинки в tikz
+\usepackage{microtype} % свешивание пунктуации
+
+\usepackage{array} % для столбцов фиксированной ширины
+
+\usepackage{url} % для вставки ссылок \url{...}
+
+\usepackage{indentfirst} % отступ в первом параграфе
+
+\usepackage{sectsty} % для центрирования названий частей
+\allsectionsfont{\centering} % приказываем центрировать все sections
+
+\usepackage{amsthm} % теоремы и доказательства
+
+\theoremstyle{definition} % прямой шрифт в условии теорем
+\newtheorem{theorem}{Теорема}[section]
+
+
+\usepackage{amsmath, amssymb} % куча стандартных математических плюшек
+
+\usepackage[top=2cm, left=1.5cm, right=1.5cm, bottom=2cm]{geometry} % размер текста на странице
+
+\usepackage{lastpage} % чтобы узнать номер последней страницы
+
+\usepackage{enumitem} % дополнительные плюшки для списков
+%  например \begin{enumerate}[resume] позволяет продолжить нумерацию в новом списке
+\usepackage{caption} % подписи к картинкам без плавающего окружения figure
+
+\usepackage{hyperref} % гиперссылки
+
+\usepackage{verbatim} % побуквенный вывод
+
+\usepackage{fancyhdr} % весёлые колонтитулы
+\pagestyle{fancy}
+\lhead{Теория вероятностей}
+\chead{}
+\rhead{15 июнь 2019}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+\usepackage{booktabs} 
+
+\usepackage{fontspec} % поддержка разных шрифтов
+\usepackage{polyglossia} % поддержка разных языков
+
+\setmainlanguage{russian}
+\setotherlanguages{english}
+
+\setmainfont{Linux Libertine O} 
+
+\newfontfamily{\cyrillicfonttt}{Linux Libertine O}
+
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % для списков с русскими буквами
+\setlist[enumerate, 2]{label=\asbuk*),ref=\asbuk*} % списки уровня 2 будут буквами а) б) ...
+
+
+
+
+\begin{document}
+
+\begin{center}
+	\textbf{\large Мотивационное письмо жаждущего учить и учиться}
+\end{center}
+
+Почему же благородный дон хочет стать рыцарем Пуассона?
+
+Немудрено, что каждый рыцарь готов вступить в бой с драконом ради прекрасной принцессы. Но как только я увидел Пуассона (а он всё-таки дракон), то забыл про всех принцесс, поскольку ни одна красота не сравнится с величием моего лорда! \\
+
+Но если говорить серьёзно, то мне нравится та атмосфера, в которой живут ассистенты по теории вероятностей; я уверен, что более тесная связь с такими людьми позволит мне развиваться и становиться лучше. Более того, теория вероятностей и математическая статистика в самом деле являются самыми интересными предметами, в сравнении с уже пройденными курсами. Я уверен, у меня всё получится! \\
+
+\textbf{Немного информации о доне} \\
+
+\textbf{ФИО}: Ержанов Давид Уразалиевич
+
+\textbf{Группа}: БЭК171
+
+\textbf{Оценка по теории вероятностей}: 8 (но совсем чуть-чуть не хватило до 9)
+
+\textbf{Какие действия могу делать с бубном}: R, Python, LaTeX, bash shell; всё на уровне уверенного пользователя, кроме bash, зато могу делать фотографии Пуассона и загружать их через pull-request в репозиторий, чтобы все видели, как он красив
+
+\textbf{Как связаться с доном}: \text{мобильный - +7 (926) 292-42-05; почта - derzhanov@edu.hse.ru} \\
+
+
+
+\end{document}
